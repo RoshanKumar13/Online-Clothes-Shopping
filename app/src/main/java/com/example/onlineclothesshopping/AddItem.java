@@ -81,6 +81,7 @@ public class AddItem extends AppCompatActivity {
                     case "img10":
                         img.setImageResource(R.drawable.img10);
                         break;
+
                 }
             }
         });

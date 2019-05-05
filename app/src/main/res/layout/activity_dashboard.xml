@@ -6,17 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".Dashboard"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@color/colorPrimaryDark">
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Item Dashboard"
-        android:textSize="30dp"
-        android:fontFamily="sans-serif-smallcaps"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginBottom="30dp">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@android:color/holo_red_dark"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="30dp"
+            android:textColor="#fff"
+            android:layout_toRightOf="@id/tv1"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,7 +50,10 @@
             android:layout_height="wrap_content"
             android:text="Add item"
             android:layout_marginTop="10dp"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:background="@drawable/buttonborder"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
 
         <ImageView
             android:id="@+id/refresh"
@@ -43,7 +69,8 @@
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background">
+        android:background="#fff"
+        >
 
     </android.support.v7.widget.RecyclerView>
 
